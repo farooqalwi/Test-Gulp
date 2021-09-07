@@ -6,6 +6,7 @@
     "gulp-concat": "^2.6.1",
     "gulp-cssmin": "^0.2.0",
     "gulp-postcss": "^9.0.1",
+    "postcss": "^8.3.6",
     "postcss-font-magician": "^3.0.0",
     "rfs": "^9.0.5"
   }
