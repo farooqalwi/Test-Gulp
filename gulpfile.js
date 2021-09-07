@@ -44,15 +44,11 @@ function browsersyncReload(cb) {
 
 // Watch Task
 function watchTask() {
-  console.log("Inside watchTask");
-  watch("./output/*.html", browsersyncReload);
-  watch(["./css/*.css"], series(cssTasks, browsersyncReload));
+  watch("./*.html", browsersyncReload);
+  watch(["./cssFiles/*.css"], series(cssTasks, browsersyncReload));
 }
 
 
-// const build = series(cleanOutput, cleanStatic, cssTasks, buildContent);
-
 // Default Gulp Task
-// exports.default = series(build, parallel(browsersyncServe, watchTask));
+exports.default = series(cssTasks, parallel(browsersyncServe, watchTask));
 
-exports.default = series(cssTasks);
