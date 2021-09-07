@@ -1,0 +1,14 @@
+body {
+  background-color: whitesmoke;
+}
+
+
+body > header{
+  background-color: lightgray;
+}
+
+footer{
+  background-color: lightgray;
+}
+
+
