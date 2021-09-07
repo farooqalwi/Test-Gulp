@@ -16,9 +16,9 @@ function cssTasks() {
       //It executes the task to minify the files
       .pipe(cssmin())
       //magician generates all @font-face rules. We never have to write a @font-face rule again.
-    //   .pipe(postcss([magician()]))
+      .pipe(postcss([magician()]))
       //RFS is a unit resizing engine which was initially developed to resize font sizes
-    //   .pipe(postcss([rfs()]))
+      .pipe(postcss([rfs()]))
       //It concates all css files into one file
       .pipe(concat("main.css"))
       //It defines the destination of the minified files with the method dest
